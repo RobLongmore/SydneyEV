@@ -3,66 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Vlog/Article Webpage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>EV Tech Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Header -->
     <header class="header">
-        <h1>My Tech Vlog</h1>
-        <nav>
+        <div class="logo">My EV Tech</div>
+        <nav class="nav">
             <ul>
-                <li>Home</li>
-                <li>Blog</li>
-                <li>EV</li>
-                <li>Renewables</li>
-                <li>Contact</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="social-media">
+            <a href="#">FB</a> | <a href="#">TW</a> | <a href="#">YT</a>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>Welcome to My EV and Renewable Energy Blog</h2>
-        <button>Read Latest Articles</button>
+        <h1>Welcome to My EV Tech Blog</h1>
+        <p>Explore the latest in electric vehicles and renewable energy.</p>
+        <button>Shop Now</button>
     </section>
 
     <!-- Main Content Area -->
-    <section class="content-area">
-        <!-- Left Sidebar (Optional) -->
+    <section class="content">
+        <!-- Left Sidebar (YouTube Videos, Social Media) -->
         <aside class="sidebar left">
-            <h3>Social Feed</h3>
-            <p>Latest Tweets...</p>
+            <h2>YouTube</h2>
+            <p>Latest Videos</p>
+            <!-- You can embed YouTube here -->
         </aside>
 
-        <!-- Main Content -->
-        <article class="main-content">
-            <h3>Featured Articles</h3>
-            <p>Your blog posts and content will appear here.</p>
+        <!-- Main Articles -->
+        <article class="main">
+            <h2>Latest Articles</h2>
+            <p>Stay up-to-date with the latest in EV technology.</p>
         </article>
 
-        <!-- Right Sidebar (Optional) -->
+        <!-- Right Sidebar (Shop or Popular Posts) -->
         <aside class="sidebar right">
-            <h3>Popular Posts</h3>
-            <p>Upcoming projects and popular content...</p>
+            <h2>Shop</h2>
+            <p>EV products and accessories</p>
         </aside>
     </section>
 
-    <!-- Featured Video Section -->
-    <section class="featured-video">
-        <h3>Featured YouTube Video</h3>
-        <div class="video-container">
-            <div class="video">[Your Video]</div>
-            <div class="description">
-                <p>Video description goes here...</p>
-            </div>
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">Product 1</div>
+            <div class="product">Product 2</div>
         </div>
     </section>
 
     <!-- Recent Articles Section -->
     <section class="recent-articles">
-        <h3>Recent Articles</h3>
+        <h2>Recent Articles</h2>
         <div class="articles-grid">
             <div class="article">Article 1</div>
             <div class="article">Article 2</div>
@@ -72,7 +74,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2024 My Tech Vlog</p>
+        <p>&copy; 2024 My EV Tech</p>
     </footer>
 
 </body>
