@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f5f5f5; /* Light gray background to mimic E-ink */
+    background-color: #f5f5f59a; /* Light gray background to mimic E-ink */
     color: #000000; /* Black text for high contrast */
     /* Optional Texture */
     /* Uncomment the following lines if you have a texture image */
@@ -29,7 +29,7 @@ a {
 .header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    background-color: #f5f5f5;
+    background-color: #f5f5f59a;
     color: #000000;
     padding: 20px;
     /*border: 1px solid #000000;*/
@@ -55,7 +55,7 @@ a {
 
 /* Hero Section */
 .hero {
-    background-color: #f5f5f5;
+    background-color: #f5f5f59a;
     padding: 50px;
     text-align: center;
     border: 1px solid #000000;
@@ -74,7 +74,7 @@ a {
 }
 
 .sidebar, .main {
-    background-color: #f5f5f5;
+    background-color: #f5f5f59a;
     color: #000000;
     padding: 20px;
     border: 1px solid #000000;
@@ -90,7 +90,7 @@ a {
 }
 
 .product {
-    background-color: #f5f5f5;
+    background-color: #f5f5f59a;
     color: #000000;
     padding: 20px;
     text-align: center;
@@ -106,7 +106,7 @@ a {
 }
 
 .article {
-    background-color: #f5f5f5;
+    background-color: #f5f5f59a;
     color: #000000;
     padding: 20px;
     text-align: center;
@@ -114,7 +114,7 @@ a {
 
 /* Footer */
 .footer {
-    background-color: #f5f5f5;
+    background-color: #f5f5f59a;
     color: #000000;
     padding: 20px;
     text-align: center;
@@ -122,7 +122,7 @@ a {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Georgia', serif;
+    font-family: 'Lato', serif;
     text-shadow: none;
 }
 
@@ -131,7 +131,7 @@ p, li {
 }
 
 code, pre {
-    font-family: 'Courier New', monospace;
+    font-family: 'Lato', monospace;
 }
 
 /* Images */
@@ -141,7 +141,7 @@ img {
 
 /* Buttons and Form Elements */
 button, input, select, textarea {
-    background-color: #ffffff;
+    background-color: #f5f5f59a;
     color: #000000;
     border: 1px solid #000000;
 }
