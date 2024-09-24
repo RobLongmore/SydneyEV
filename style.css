@@ -24,7 +24,29 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px; /* Horizontal padding of 20px */
+}
+
+/* Sidebar and Main Content */
+.sidebar, .main {
+    background-color: #f5f5f59a;
+    color: #000000;
+    padding: 20px; /* Padding on all sides */
+    border: 1px solid #000000;
+}
+
+/* Featured Products and Recent Articles Sections */
+.featured-products,
+.recent-articles {
+    padding: 20px;
+    padding-left: 40px; /* Adjusted left padding */
+}
+
+/* Alternatively, adjust headings */
+.featured-products h2,
+.recent-articles h2 {
+    margin-left: 20px; /* Alternative method */
+    margin-top: 0;
 }
 
 /* Header */
@@ -87,6 +109,7 @@ a {
 .featured-products,
 .recent-articles {
     padding: 20px 0;
+    padding-left: 40px;
 }
 
 .featured-products h2,
