@@ -22,7 +22,7 @@ a {
 
 /* Container Class */
 .container {
-    max-width: 1200px;
+    max-width: 1800px; /* adjust for total screen width */
     margin: 0 auto;
     padding: 0 20px; /* Horizontal padding of 20px */
 }
