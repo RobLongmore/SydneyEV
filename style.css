@@ -109,7 +109,7 @@ a {
 .featured-products,
 .recent-articles {
     padding: 20px 0;
-    padding-left: 40px;
+    padding-left: 0px; /* adjust to move the padding of heading featured and recent articles. */
 }
 
 .featured-products h2,
