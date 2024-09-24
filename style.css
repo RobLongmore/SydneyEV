@@ -19,84 +19,53 @@ a {
     color: #000000;
     text-decoration: underline;
 }
-  /* ARTICAL PAGE STUFF */
-  /*---------------------------------------------------------*/
 
-  /* Styles for the main article */
-.main-article {
-    max-width: 800px; /* Adjust this value as needed */
-    margin: 0 auto; /* Centers the article horizontally */
-    padding: 0 20px; /* Adds horizontal padding */
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', serif;
+    text-shadow: none;
 }
 
-/* Override grayscale filter for images with class 'color-image' */
-.color-image img {
-    filter: none; /* Removes the grayscale filter */
-    max-width: 100%; /* Ensures the image doesn't exceed container width */
+p, li {
+    line-height: 1.6;
+}
+
+code, pre {
+    font-family: 'Quicksand', monospace;
+}
+
+/* Images */
+img {
+    filter: grayscale(100%);
+}
+
+/* Video Thumbnail */
+.video-thumbnail {
+    filter: grayscale(100%);
+    width: 100%;
     height: auto;
     display: block;
+    border: none;
+    margin-top: 10px;
 }
 
-/* Center the figure and add spacing */
-.color-image {
-    margin: 20px auto; /* Adds vertical spacing and centers the figure */
-    text-align: center;
+/* Buttons and Form Elements */
+button, input, select, textarea {
+    background-color: #f5f5f59a;
+    color: #000000;
+    border: 1px solid #000000;
 }
 
-/* Style figcaption */
-.color-image figcaption {
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 5px;
-}
-
-/* Adjusted styles for images in articles */
-.color-image {
-    margin: 20px auto; /* Centers the figure and adds vertical spacing */
-    text-align: center;
-    max-width: 600px; /* Sets a maximum width for the entire figure */
-}
-
-.color-image img {
-    width: 100%; /* Image fills the width of the figure */
-    height: auto; /* Maintains aspect ratio */
-    display: block;
-    filter: none; /* Removes grayscale filter */
-}
-
-.color-image figcaption {
-    font-size: 0.9rem;
-    color: #555;
-    margin-top: 5px;
+/* Remove box shadows */
+.product, .article {
+    box-shadow: none;
 }
 
 /* Container Class */
 .container {
-    max-width: 1800px; /* adjust for total screen width */
+    max-width: 1800px; /* Adjust for total screen width */
     margin: 0 auto;
     padding: 0 20px; /* Horizontal padding of 20px */
-}
-
-/* Sidebar and Main Content */
-.sidebar, .main {
-    background-color: #f5f5f59a;
-    color: #000000;
-    padding: 20px; /* Padding on all sides */
-    border: 1px solid #000000;
-}
-
-/* Featured Products and Recent Articles Sections */
-.featured-products,
-.recent-articles {
-    padding: 20px;
-    padding-left: 40px; /* Adjusted left padding */
-}
-
-/* Alternatively, adjust headings */
-.featured-products h2,
-.recent-articles h2 {
-    margin-left: 20px; /* Alternative method */
-    margin-top: 0;
 }
 
 /* Header */
@@ -159,7 +128,7 @@ a {
 .featured-products,
 .recent-articles {
     padding: 20px 0;
-    padding-left: 0px; /* adjust to move the padding of heading featured and recent articles. */
+    padding-left: 0px; /* Adjust to move the padding of headings */
 }
 
 .featured-products h2,
@@ -173,8 +142,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    /* Remove padding to align with container */
-    padding: 0;
+    padding: 0; /* Remove padding to align with container */
 }
 
 .product {
@@ -189,8 +157,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    /* Remove padding to align with container */
-    padding: 0;
+    padding: 0; /* Remove padding to align with container */
 }
 
 .article {
@@ -208,43 +175,126 @@ a {
     text-align: center;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quicksand', serif;
-    text-shadow: none;
+/* Article Page Styles */
+/* --------------------------------------------------------- */
+
+/* Styles for the main article */
+.main-article {
+    max-width: 800px; /* Adjust this value as needed */
+    margin: 0 auto; /* Centers the article horizontally */
+    padding: 0 20px; /* Adds horizontal padding */
 }
 
-p, li {
-    line-height: 1.6;
+/* Images in Articles */
+.color-image {
+    margin: 20px auto; /* Centers the figure and adds vertical spacing */
+    text-align: center;
+    max-width: 600px; /* Sets a maximum width for the entire figure */
 }
 
-code, pre {
-    font-family: 'Quicksand', monospace;
+.color-image img {
+    width: 100%; /* Image fills the width of the figure */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    filter: none; /* Removes grayscale filter */
 }
 
-/* Images */
-img {
-    filter: grayscale(100%);
+.color-image figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
 }
 
-/* Video Thumbnail */
-.video-thumbnail {
-    filter: grayscale(100%);
+/* Home Button Styles */
+.home-button {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 800px; /* Match the max-width of .main-article */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Index Page Latest Article Styles */
+/* --------------------------------------------------------- */
+
+/* Styles for Latest Article Section */
+.latest-article {
+    position: relative;
+    color: #ffffff; /* Set text color to white */
+    margin-bottom: 40px;
+}
+
+.latest-article h2 {
+    color: #000000;
+}
+
+.article-with-image {
+    position: relative;
+}
+
+.article-image img {
     width: 100%;
     height: auto;
     display: block;
-    border: none;
-    margin-top: 10px;
+    filter: grayscale(100%); /* Apply grayscale filter */
 }
 
-/* Buttons and Form Elements */
-button, input, select, textarea {
-    background-color: #f5f5f59a;
-    color: #000000;
-    border: 1px solid #000000;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
 }
 
-/* Remove box shadows */
-.product, .article {
-    box-shadow: none;
+.article-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.article-text h3 {
+    font-size: 2rem;
+}
+
+.article-text h3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.article-text h3 a:hover {
+    text-decoration: underline;
+}
+
+.article-text p {
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.read-more {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    text-decoration: none;
+}
+
+/* Responsive text sizes */
+@media (max-width: 600px) {
+    .article-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .article-text p {
+        font-size: 0.9rem;
+    }
 }
