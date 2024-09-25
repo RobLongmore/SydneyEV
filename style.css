@@ -92,13 +92,20 @@ button, input, select, textarea {
 }
 
 .social-media {
-    text-align: right; /* Aligns the social media links to the right */
+    text-align: right;
+    font-size: 0; /* Removes whitespace caused by text nodes */
+}
+
+.social-media a {
+    font-size: initial; /* Resets font size for clickable elements if needed */
 }
 
 .social-icon {
+    width: 30px;  /* Set a fixed width */
+    height: 30px; /* Set a fixed height to keep the icons square */
+    object-fit: contain; /* Ensures the image is scaled correctly within the dimensions */
     margin-left: 10px; /* Adds spacing between icons */
-    width: 30px; /* Sets a fixed width for icons */
-    height: auto; /* Maintains aspect ratio */
+    vertical-align: middle; /* Aligns icons if there is any vertical misalignment */
 }
 
 /* Hero Section */
