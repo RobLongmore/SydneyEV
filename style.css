@@ -41,7 +41,7 @@ img {
 
 /* Video Thumbnail */
 .video-thumbnail {
-    filter: grayscale(100%);
+    filter: none; /* change to greyscale(100%) if needed */
     width: 100%;
     height: auto;
     display: block;
