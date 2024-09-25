@@ -77,22 +77,28 @@ button, input, select, textarea {
     padding: 20px 0;
 }
 
-.header .logo {
+.logo {
     text-align: left;
 }
 
-.header .nav ul {
+.nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-.header .nav ul li {
+.nav ul li {
     margin: 0 15px;
 }
 
-.header .social-media {
-    text-align: right;
+.social-media {
+    text-align: right; /* Aligns the social media links to the right */
+}
+
+.social-icon {
+    margin-left: 10px; /* Adds spacing between icons */
+    width: 30px; /* Sets a fixed width for icons */
+    height: auto; /* Maintains aspect ratio */
 }
 
 /* Hero Section */
