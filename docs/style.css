@@ -1,53 +1,340 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f59a;
+    color: #000000;
+}
+
+/* Remove animations and transitions */
+* {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Style links */
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', serif;
+    text-shadow: none;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+code, pre {
+    font-family: 'Quicksand', monospace;
+}
+
+/* Images */
+img {
+    filter: grayscale(100%);
+}
+
+/* Video Thumbnail */
+.video-thumbnail {
+    filter: none; /* change to greyscale(100%) if needed */
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    margin-top: 10px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px; /* Add some spacing between videos */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Buttons and Form Elements */
+button, input, select, textarea {
+    background-color: #f5f5f59a;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+/* Remove box shadows */
+.product, .article {
+    box-shadow: none;
+}
+
+/* Container Class */
+.container {
+    max-width: 1200px; /* Reduced width for better alignment */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #f5f5f59a;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.logo {
+    text-align: left;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.social-media {
+    text-align: right;
+    font-size: 0; /* Removes whitespace caused by text nodes */
+}
+
+.social-media a {
+    font-size: initial; /* Resets font size for clickable elements if needed */
+}
+
+.social-icon {
+    width: 30px;  /* Set a fixed width */
+    height: 30px; /* Set a fixed height to keep the icons square */
+    object-fit: contain; /* Ensures the image is scaled correctly within the dimensions */
+    margin-left: 10px; /* Adds spacing between icons */
+    vertical-align: middle; /* Aligns icons if there is any vertical misalignment */
+}
+
+/* Hero Section     main heading blog n stuff */
+.hero {
+    background-color: #f5f5f59a;
+    padding: 50px 0;
+    text-align: center;
+    /*border: 1px solid #000000;*/
+    margin: 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+/* Main Content Grid Setup */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+    padding: 20px 0;
+}
+
+/* Sidebar and Main Content Styles */
+.sidebar, .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f5f5f59a;
+    color: #000000;
+    padding: 20px;
+    /*border: 1px solid #000000;*/
+    height: 100%;
+}
+
+/* Featured Products and Recent Articles Sections */
+.featured-products,
+.recent-articles {
+    padding: 20px 0;
+    padding-left: 0px;
+}
+
+.featured-products h2,
+.recent-articles h2 {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/* Product Grid */
+.featured-products .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 0;
+}
+
+.product {
+    background-color: #f5f5f59a;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Articles Grid */
+.recent-articles .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+}
+
+.article {
+    background-color: #f5f5f59a;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #f5f5f59a;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Article Page Styles */
+/* --------------------------------------------------------- */
+
+/* Styles for the main article */
+.main-article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Images in Articles */
+.color-image {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+.color-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: none;
+}
+
+.color-image figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Home Button Styles */
+.home-button {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Index Page Latest Article Styles */
+/* --------------------------------------------------------- */
+
+/* Styles for Latest Article Section */
+.latest-article {
+    position: relative;
+    color: #030303;
+    margin-bottom: 40px;
+    background-color: #f5f5f59a;
+    /*border: 1px solid #000000;   Added border to ensure visibility */
+}
+
 /* Add spacing between article containers */
 .article-with-image {
     position: relative;
-    margin-bottom: 40px; /* Adds spacing between articles */
+    margin-bottom: 60px; /* Increased margin to add more space between articles */
     padding: 20px; /* Padding inside the article for neatness */
     background-color: #f5f5f59a; /* Background to match the theme */
-    border: 1px solid #000000; /* Border to define article areas */
+    /* border: 1px solid #000000; /* Border to define article areas */
     display: flex; /* Align the image and text side-by-side */
     flex-wrap: wrap; /* For responsiveness */
 }
 
-/* Adjust the layout of the image and text */
-.article-image {
-    flex: 1 1 40%; /* Image takes 40% of the space */
-    padding-right: 20px; /* Spacing between the image and text */
-}
-
-.article-text {
-    flex: 1 1 60%; /* Text takes 60% of the space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Improve the alignment of article text */
-.article-text h3 {
-    margin: 0 0 10px;
-    font-size: 1.8rem;
-}
-
-.article-text p {
-    margin-bottom: 10px;
-}
-
-/* Make sure thumbnails and images are properly sized */
 .article-image img {
     width: 100%;
     height: auto;
-    border: none;
     display: block;
+    filter: none; /* change to filter:none to remove the grayscale effect */
 }
 
-/* Responsive fix for mobile screens */
-@media (max-width: 768px) {
-    .article-with-image {
-        flex-direction: column; /* Stack image and text vertically on smaller screens */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.article-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.article-text h3 {
+    font-size: 2rem;
+}
+
+.article-text h3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.article-text h3 a:hover {
+    text-decoration: underline;
+}
+
+.article-text p {
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.read-more {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    text-decoration: none;
+}
+
+/* Responsive text sizes */
+@media (max-width: 600px) {
+    .article-text h3 {
+        font-size: 1.5rem;
     }
 
-    .article-image {
-        padding-right: 0;
-        margin-bottom: 20px; /* Add some margin below the image */
+    .article-text p {
+        font-size: 0.9rem;
     }
 }
